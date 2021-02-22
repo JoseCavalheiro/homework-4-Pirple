@@ -1,0 +1,51 @@
+""" 
+create a variable corresponding to a empty list
+create a function that will allow to add elements to the empty list only if:
+- it is not repeated. beside to add the element should return the information of TRUE
+- it is repeated, the value should not be add and should return the information of FALSE
+Test the function created
+create other list that should add all the elements/values rejected on the first list because were duplicated
+"""
+
+#function to add elements to myUniqueList
+def addElements (var):
+    if var in myUniqueList:
+        myLeftOvers.append(var)
+        output = True
+        output = print ("---Value repeated -- FALSE --- List LeftOvers")
+        output = print(myLeftOvers)
+        output = print ("---Value not repeated -- TRUE--- List myUniqueList")
+        output = print(myUniqueList)
+        #output = FalsemyLeftOvers
+    else:
+        myUniqueList.append(var)
+        #output = myUniqueList
+        output = print ("---Value not repeated -- TRUE--- List myUniqueList")
+        output = print(myUniqueList)
+        output = print ("---Value repeated -- FALSE --- List LeftOvers")
+        output = print(myLeftOvers)
+        #output = True
+
+#creation of empty list that will receive the elements not repeated - TRUE
+myUniqueList = []
+#creation of empty list that will receive the elements repeated - False 
+myLeftOvers = []
+
+#insert value without a variable described
+varElement = addElements (1)
+#insert values to test the function, using a variable
+"""var=1
+varElement = addElements(var)
+var=1
+varElement = addElements(var)
+var=2
+varElement = addElements(var)
+var=3
+varElement = addElements(var)
+var=10000
+varElement = addElements(var)
+var=3
+varElement = addElements(var)
+var=3
+varElement = addElements(var)
+"""
